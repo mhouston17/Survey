@@ -8,18 +8,23 @@
     </head>
 <body>
     
-    
-
 <head>
-    <h1 id="title">Survey Form</h1>
-</head>    
-       
-            <h2>Let us know how we can help your business </h2>
+   
+</head>  
+<div class="video-container">
+<video class="video-background" autoplay loop muted>
+    <source src="./css/Images/video (2160p).mp4" type="video/mp4">
+    <!-- Add more video sources here as needed -->
+</video>
+
+</div> 
+    <h1>Tell us how can we can create your dream website?</h1>
         
 <div class="outline">    
     <form action="https://formsubmit.co/mhouston177@gmail.com" method="post" id="container">
        
-        <div id="Survey-form">
+        <div id="survey-form">
+            
             <div class="labels">
                 <label id="name" for="name">* Name: </label>
             </div>
@@ -28,47 +33,68 @@
             </div>
             
             <div class="labels">
-                <label id="email" for="email">* Email: </label>
+                <label id="email" type="email" for="email">* Email: </label>
             </div>
             <div class="right-side">
                 <input type="text" name="email" id="email" placeholder="Enter email" required>
             </div>
             
             <div class="labels">
-                <label id="company" for="text">* Company Name: </label>
+                <label for="roles">* What type of Website are you interested in?</label>
             </div>
             <div class="right-side">
-                <input type="text" name="company" id="email" placeholder="Enter company" required>
-            </div>
-            <div class="labels">
-                <label for="roles">* Which service are you requesting?</label>
-            </div>
-            <div class="right-side">
-                <select id="dropdown" name="roles" class="dropdown">
+                <select id="dropdown" name="roles" class="dropdown" placeholder="Select an option">
                     <option disabled value> Select an option</option>
-                    <option> A New Website</option>
-                    <option> Administrative Services</option>
-                    <option> Copywritting Services</option>
+                    <option> Boutique</option>
+                    <option> Blog</option>
+                    <option> Personal Web Page</option>
+                    <option> E-commerce Site</option>
+                    <option> Small Business</option>
                 </select>
         </div>
+        <div class="labels">To get an idea of your style, which picture below visually appeals to you the most?<br></div>
+        <div class="special">
+        <div class="right-side">
+            <div class="pics">
+                <div class="column">
+                  <input type="radio" name="selected_column" value="1">
+                  <img src="./css/Images/pexels-chavdar-lungov-3996362.jpg" class="hvr-grow-shadow" alt="Image 1">
+                  <h3>Open Sky</h3>
+                 
+                </div>
+                <div class="column">
+                  <input type="radio" name="selected_column" value="2">
+                  <img src="./css/Images/pexels-asad-photo-maldives-3293148.jpg" class="hvr-grow-shadow" alt="Image 2">
+                  <h3>Tropical Paradise</h3>
+                  
+                </div>
+                <div class="column">
+                  <input type="radio" name="selected_column" value="3">
+                  <img src="./css/Images/pexels-aleksandar-pasaric-325193.jpg" class="hvr-grow-shadow" alt="Image 3">
+                  <h3>City View</h3>
+                </div>
+                             
+                </div>
+                
+            </div>
+           
+        </div>
     
-        <div class="labels">* Explain in detail how I can help your business?</div>
+        <div class="labels last">* Please explain in detail your vision for your dream Website</div>
         <div class="special">
         <div class="right-side">
             <input rows="20" cols="50" type="text" name="comments" id="comments" placeholder="Enter comments here..."></input>
         </div>
         </div>
             
-            <div class="labels">Please link 1-2 websites that you admire?<br><em>(If you are requesting a Website)</em></div>
-            <div class="special">
-            <div class="right-side">
-            <input class="userInput" type="text" name="comments" id="comments" placeholder="Enter comments here...">
-        </div>
-        </div>
+        <div class="p">You will recieve a response to your inquiry within 24 hours</div>
+        
+        
             <button id="submit" type="submit"><a class="hvr-grow-shadow">Submit</button>
         </div>
     </form>
 </div>
-  
 </body>
 </html>
+
+

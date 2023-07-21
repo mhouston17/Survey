@@ -1,112 +1,164 @@
 body {
-    background-image: linear-gradient( 115deg, rgba(87, 187, 87, 0.8), rgba(52, 45, 189, 0.7) ), url(./Images/pexels-thisisengineering-3861969.jpg);
-    font-family: 'Lora', serif;
-    font-size: 20px;
-    color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-}
-
-#container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    background-color: -moz-linear-gradient(rgb(146, 119, 119));
-    margin-left: 230px;
-    margin-right: 230px;
-    padding-bottom: 80px;  
-    overflow-wrap: break-word;
-    
-    border-radius: 6px;
-   
-}
-#email {
-  width: 300px;
-  height: 23px;
-  border-radius: 4px;
-  border-color: none;
-}
-
-#name {
-  width: 300px;
-  height: 23px;
-  border-radius: 4px;
-}
-
-#company {
-  width: 300px;
-  height: 23px;
-  border-radius: 6px;
-}
-#dropdown {
-  
-  width: 305px;
-  height: 33px;
-  border-radius: 6px;
-}
-#comments {
-  width: 300px;
-  height: 80px;
-  border-radius: 6px;
-}
-.labels {
-    
-    text-align: right;
-    margin-top: 10px;
-    border-radius: 6px;
-}
-
-.right-side {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: left;
-    margin-left: 105%;
-    margin-bottom: 5px;
-    align-items: right;
-    white-space: nowrap;
-    position: relative;
-    bottom: 20px;
-    
-}
-
-.gap {
-    background-color: white;
-}
-h2 {
-    text-align: center;
-    margin-left: 230px;
-    margin-right: 230px;
-    height: 40px;
-    margin-bottom: 10px;
-    padding-top: 15px;
-    color: white;
-    
-}
-
-#submit {
-  background-color: rgba(87, 187, 87, 0.8);
-  border-radius: 4px;
-  color: white;
-  font-size: 1em;
-  height: 40px;
-  width: 96px;
-  margin: 10px;
-  border: 0px solid;
-  margin-left: 93%;
-  position: relative;
-  top: 50px;
+.video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 50%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transition: opacity 1s ease;
+  z-index: -1;
   
   }
 
-.normal {
-    overflow-wrap: normal;
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+  }
+
+.pics {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 190px;
+}
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.p {
+  text-align: center;
+  padding-top: 9px;
+}
+#dropdown {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.outline {
+  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  background-color: rgb(182, 180, 184, 0.5);
+  box-shadow: 0 0 5px rgba(12, 12, 12, 0.1);
+  border-radius: 8px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+
+#submit {
+  color: white;
+}
+
+.labels {
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1.2px) translateZ(0);
+  transform: perspective(1.2px) translateZ(0);
+  
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(0.9);
+  color: rgb(63, 55, 61);
+}
+
+#city {
+  padding-bottom: 30px;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #6c2783;
+  color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #9875ad;
 }
 
 .special {
-    position: relative;
-    bottom: 18px; 
+  margin-top: 10px;
 }
 
+.special input,
+.special textarea {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    padding: 10px;
+  }
+}
